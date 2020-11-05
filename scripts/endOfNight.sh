@@ -8,7 +8,7 @@ if [ $# -eq 1 ] ; then
 		LAST_NIGHT=$1
 	fi
 else
-	LAST_NIGHT=$(date -d '12 hours ago' +'%Y%m%d')
+	LAST_NIGHT=$(date -d 'yesterday' +'%Y%m%d')
 fi
 
 source $ALLSKY_HOME/config.sh
